@@ -1,8 +1,8 @@
 [package]
-name = "kampfkarren/roact-hooks"
-description = "An implementation of hooks in Roact"
-version = "0.5.1"
+name = "firere/roact-hooks"
+description = "An implementation of hooks in Roact, with some extra features"
+version = "0.5.2"
 license = "MPL-2.0"
-authors = ["Kampfkarren"]
+authors = ["Kampfkarren", "Firere"]
 realm = "shared"
 registry = "https://github.com/upliftgames/wally-index"

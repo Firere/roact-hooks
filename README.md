@@ -63,7 +63,7 @@ Used to perform a side-effect with a callback function.
 
 This callback function can return a destructor. When the component unmounts or the dependencies change, this function will be called.
 
-You can also pass in a list of dependencies to `useEffect`. If passed, then only when those dependencies change will the callback function be re-ran.
+You can also pass in a list of dependencies to `useEffect`. If passed, then only when those dependencies change will the callback function be re-ran. Additionally, if you pass `"didMount"` as a dependency, then the effect will not run when the component mounts; it will truly only run the callback whenever one of the other dependencies changes.
 
 ### useContext
 `useContext(context: RoactContext<T>) -> T`

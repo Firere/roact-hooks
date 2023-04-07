@@ -27,6 +27,14 @@ local function PrintingButton(_props, hooks)
 		print("i only run once")
 	end, {})
 
+	hooks.useEffect(function()
+		print("i do not run on mount")
+	end, { "didMount" })
+
+	hooks.useEffect(function()
+		print("i do not run on mount, however i do run whenever counter or loner counter change")
+	end, { counter, lonerCounter, "didMount" })
+
 	return e("Frame", {
 		BackgroundTransparency = 1,
 		Size = UDim2.fromScale(1, 1),
